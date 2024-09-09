@@ -26,7 +26,7 @@ pipeline {
         stage('Run-wroker') {
             steps {
                 // Run the Docker container and expose port 80
-                sh "docker run -p 80:80 -d rajeshtalla0209/votingapp-worker:${VERSION}"
+                sh "docker run -p 83:80 -d rajeshtalla0209/votingapp-worker:${VERSION}"
             }
         }
 
